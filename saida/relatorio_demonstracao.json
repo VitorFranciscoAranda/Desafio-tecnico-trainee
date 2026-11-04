@@ -1,0 +1,111 @@
+{
+  "data_referencia": "2026-10-30",
+  "total_registros": 19,
+  "registros_validos": 6,
+  "registros_invalidos": 13,
+  "total_aprovado": "1200.30",
+  "invalidos": [
+    {
+      "linha": 2,
+      "pedido_id": "PED-101",
+      "erros": [
+        "pedido_id: duplicado no arquivo"
+      ]
+    },
+    {
+      "linha": 8,
+      "pedido_id": "PED-107",
+      "erros": [
+        "pedido_id: duplicado no arquivo"
+      ]
+    },
+    {
+      "linha": 9,
+      "pedido_id": "PED-107",
+      "erros": [
+        "pedido_id: duplicado no arquivo"
+      ]
+    },
+    {
+      "linha": 11,
+      "pedido_id": "PED-108",
+      "erros": [
+        "valor: formato inválido (use 10, 10.5 ou 10.50)"
+      ]
+    },
+    {
+      "linha": 12,
+      "pedido_id": "PED-109",
+      "erros": [
+        "valor: formato inválido (use 10, 10.5 ou 10.50)"
+      ]
+    },
+    {
+      "linha": 13,
+      "pedido_id": "PED-110",
+      "erros": [
+        "data_pedido: data inexistente"
+      ]
+    },
+    {
+      "linha": 14,
+      "pedido_id": "PED-111",
+      "erros": [
+        "data_pedido: posterior à data de referência"
+      ]
+    },
+    {
+      "linha": 15,
+      "pedido_id": "PED-112",
+      "erros": [
+        "cliente: obrigatório",
+        "email: formato inválido",
+        "valor: formato inválido (use 10, 10.5 ou 10.50)",
+        "data_pedido: formato inválido (use AAAA-MM-DD)",
+        "status: inválido (use PENDENTE, APROVADO ou CANCELADO)"
+      ]
+    },
+    {
+      "linha": 16,
+      "pedido_id": "PED-113",
+      "erros": [
+        "email: formato inválido",
+        "valor: formato inválido (use 10, 10.5 ou 10.50)"
+      ]
+    },
+    {
+      "linha": 17,
+      "pedido_id": "",
+      "erros": [
+        "pedido_id: obrigatório"
+      ]
+    },
+    {
+      "linha": 18,
+      "pedido_id": "PED-114",
+      "erros": [
+        "valor: deve ser maior que zero"
+      ]
+    },
+    {
+      "linha": 19,
+      "pedido_id": "",
+      "erros": [
+        "pedido_id: obrigatório",
+        "cliente: obrigatório",
+        "email: obrigatório",
+        "valor: obrigatório",
+        "data_pedido: obrigatória",
+        "status: obrigatório"
+      ]
+    },
+    {
+      "linha": 20,
+      "pedido_id": "PED-101",
+      "erros": [
+        "email: formato inválido",
+        "pedido_id: duplicado no arquivo"
+      ]
+    }
+  ]
+}

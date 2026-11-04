@@ -1,0 +1,4 @@
+pedido_id,cliente,email,valor,data_pedido,status
+PED-001,Alfa,a@alfa.com,150.50,2026-10-29,APROVADO
+PED-002,Beta,b@beta.com,40,2026-10-30,CANCELADO
+PED-003,Gama,sem-arroba,20.00,2026-10-30,PENDENTE

@@ -1,0 +1,16 @@
+# Arquivos gerados pelo Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual
+.venv/
+
+# Configurações do Visual Studio / VS Code
+.vs/
+.vscode/
+
+# Enunciado original (referência local, não faz parte da entrega)
+docs/enunciado/
+
+# Descrição usada para configurar o assistente (não faz parte da entrega)
+docs/descricao-projeto.md

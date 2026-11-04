@@ -1,0 +1,71 @@
+Comando: python -m unittest discover -v
+Executado em: 2026-11-04 14:47 (Windows 11, Python 3.12.10)
+
+test_versao_do_python (tests.test_ambiente.TestAmbiente.test_versao_do_python) ... ok
+test_data_de_referencia_invalida (tests.test_cli.TestArgumentos.test_data_de_referencia_invalida) ... ok
+test_help (tests.test_cli.TestArgumentos.test_help) ... ok
+test_saida_obrigatoria (tests.test_cli.TestArgumentos.test_saida_obrigatoria) ... ok
+test_entrada_nao_e_modificada (tests.test_cli.TestExecucaoCompleta.test_entrada_nao_e_modificada) ... ok
+test_relatorio_de_demonstracao_entregue_esta_atualizado (tests.test_cli.TestExecucaoCompleta.test_relatorio_de_demonstracao_entregue_esta_atualizado) ... ok
+test_sem_data_de_referencia_usa_hoje (tests.test_cli.TestExecucaoCompleta.test_sem_data_de_referencia_usa_hoje) ... ok
+test_t05_aprovado_invalido_fica_fora_da_soma (tests.test_cli.TestExecucaoCompleta.test_t05_aprovado_invalido_fica_fora_da_soma) ... ok
+test_t06_somente_cabecalho (tests.test_cli.TestExecucaoCompleta.test_t06_somente_cabecalho) ... ok
+test_t08_comando_publicado_gera_json_esperado (tests.test_cli.TestExecucaoCompleta.test_t08_comando_publicado_gera_json_esperado) ... ok
+test_falha_ao_gravar (tests.test_cli.TestFalhasControladas.test_falha_ao_gravar) ... ok
+test_falha_avisa_que_relatorio_antigo_nao_vale (tests.test_cli.TestFalhasControladas.test_falha_avisa_que_relatorio_antigo_nao_vale) ... ok
+test_t07_arquivo_inexistente (tests.test_cli.TestFalhasControladas.test_t07_arquivo_inexistente) ... ok
+test_t07_coluna_obrigatoria_ausente (tests.test_cli.TestFalhasControladas.test_t07_coluna_obrigatoria_ausente) ... ok
+test_t09_codificacao_invalida (tests.test_cli.TestFalhasControladas.test_t09_codificacao_invalida) ... ok
+test_t10_entrada_igual_a_saida (tests.test_cli.TestFalhasControladas.test_t10_entrada_igual_a_saida) ... ok
+test_t10_mesmo_arquivo_escrito_de_outro_jeito (tests.test_cli.TestFalhasControladas.test_t10_mesmo_arquivo_escrito_de_outro_jeito) ... ok
+test_aceita_bom_do_excel (tests.test_leitura.TestLerPedidos.test_aceita_bom_do_excel) ... ok
+test_arquivo_inexistente (tests.test_leitura.TestLerPedidos.test_arquivo_inexistente) ... ok
+test_arquivo_vazio (tests.test_leitura.TestLerPedidos.test_arquivo_vazio) ... ok
+test_campo_entre_aspas_com_virgula (tests.test_leitura.TestLerPedidos.test_campo_entre_aspas_com_virgula) ... ok
+test_codificacao_invalida (tests.test_leitura.TestLerPedidos.test_codificacao_invalida) ... ok
+test_csv_malformado (tests.test_leitura.TestLerPedidos.test_csv_malformado) ... ok
+test_le_registros_com_numero_da_linha (tests.test_leitura.TestLerPedidos.test_le_registros_com_numero_da_linha) ... ok
+test_linha_com_espacos_e_ignorada (tests.test_leitura.TestLerPedidos.test_linha_com_espacos_e_ignorada) ... ok
+test_linha_so_com_separadores_vira_registro (tests.test_leitura.TestLerPedidos.test_linha_so_com_separadores_vira_registro) ... ok
+test_ordem_diferente_e_coluna_extra (tests.test_leitura.TestLerPedidos.test_ordem_diferente_e_coluna_extra) ... ok
+test_quantidade_de_campos_diferente (tests.test_leitura.TestLerPedidos.test_quantidade_de_campos_diferente) ... ok
+test_somente_cabecalho_tem_zero_registros (tests.test_leitura.TestLerPedidos.test_somente_cabecalho_tem_zero_registros) ... ok
+test_aceita_ordem_diferente_e_coluna_extra (tests.test_leitura.TestValidarCabecalho.test_aceita_ordem_diferente_e_coluna_extra) ... ok
+test_coluna_duplicada (tests.test_leitura.TestValidarCabecalho.test_coluna_duplicada) ... ok
+test_coluna_obrigatoria_ausente (tests.test_leitura.TestValidarCabecalho.test_coluna_obrigatoria_ausente) ... ok
+test_nome_de_coluna_diferencia_maiusculas (tests.test_leitura.TestValidarCabecalho.test_nome_de_coluna_diferencia_maiusculas) ... ok
+test_falha_de_gravacao_gera_erro_controlado (tests.test_relatorio.TestGravarRelatorio.test_falha_de_gravacao_gera_erro_controlado) ... ok
+test_grava_json_utf8_e_cria_pasta (tests.test_relatorio.TestGravarRelatorio.test_grava_json_utf8_e_cria_pasta) ... ok
+test_substitui_relatorio_anterior (tests.test_relatorio.TestGravarRelatorio.test_substitui_relatorio_anterior) ... ok
+test_contagens_e_data (tests.test_relatorio.TestMontarRelatorio.test_contagens_e_data) ... ok
+test_t05_invalidos_ficam_fora_da_soma (tests.test_relatorio.TestMontarRelatorio.test_t05_invalidos_ficam_fora_da_soma) ... ok
+test_t06_sem_registros (tests.test_relatorio.TestMontarRelatorio.test_t06_sem_registros) ... ok
+test_sem_aprovados_da_zero_com_duas_casas (tests.test_relatorio.TestTotalAprovado.test_sem_aprovados_da_zero_com_duas_casas) ... ok
+test_t05_sem_erro_de_arredondamento (tests.test_relatorio.TestTotalAprovado.test_t05_sem_erro_de_arredondamento) ... ok
+test_t05_soma_somente_aprovados (tests.test_relatorio.TestTotalAprovado.test_t05_soma_somente_aprovados) ... ok
+test_valor_inteiro_sai_com_duas_casas (tests.test_relatorio.TestTotalAprovado.test_valor_inteiro_sai_com_duas_casas) ... ok
+test_formato_errado_e_rejeitado (tests.test_validacao.TestData.test_formato_errado_e_rejeitado) ... ok
+test_t04_data_futura_e_rejeitada (tests.test_validacao.TestData.test_t04_data_futura_e_rejeitada) ... ok
+test_t04_data_igual_a_referencia_e_aceita (tests.test_validacao.TestData.test_t04_data_igual_a_referencia_e_aceita) ... ok
+test_t04_data_impossivel_e_rejeitada (tests.test_validacao.TestData.test_t04_data_impossivel_e_rejeitada) ... ok
+test_emails_invalidos (tests.test_validacao.TestEmail.test_emails_invalidos) ... ok
+test_emails_validos (tests.test_validacao.TestEmail.test_emails_validos) ... ok
+test_diferencia_maiusculas (tests.test_validacao.TestIdsDuplicados.test_diferencia_maiusculas) ... ok
+test_encontra_somente_os_repetidos (tests.test_validacao.TestIdsDuplicados.test_encontra_somente_os_repetidos) ... ok
+test_ids_vazios_nao_contam_como_duplicados (tests.test_validacao.TestIdsDuplicados.test_ids_vazios_nao_contam_como_duplicados) ... ok
+test_nao_altera_conteudo_interno (tests.test_validacao.TestNormalizar.test_nao_altera_conteudo_interno) ... ok
+test_t01_remove_espacos_e_status_maiusculo (tests.test_validacao.TestNormalizar.test_t01_remove_espacos_e_status_maiusculo) ... ok
+test_linha_toda_vazia_acumula_erros_de_todos_os_campos (tests.test_validacao.TestValidarCampos.test_linha_toda_vazia_acumula_erros_de_todos_os_campos) ... ok
+test_t02_email_valor_e_status_invalidos (tests.test_validacao.TestValidarCampos.test_t02_email_valor_e_status_invalidos) ... ok
+test_duplicado_detectado_depois_de_remover_espacos (tests.test_validacao.TestValidarPedidos.test_duplicado_detectado_depois_de_remover_espacos) ... ok
+test_exemplo_do_enunciado (tests.test_validacao.TestValidarPedidos.test_exemplo_do_enunciado) ... ok
+test_id_vazio_recebe_so_erro_de_obrigatorio (tests.test_validacao.TestValidarPedidos.test_id_vazio_recebe_so_erro_de_obrigatorio) ... ok
+test_t02_varios_erros_contam_como_um_registro_invalido (tests.test_validacao.TestValidarPedidos.test_t02_varios_erros_contam_como_um_registro_invalido) ... ok
+test_t03_duplicado_invalida_todas_as_ocorrencias (tests.test_validacao.TestValidarPedidos.test_t03_duplicado_invalida_todas_as_ocorrencias) ... ok
+test_valores_invalidos (tests.test_validacao.TestValor.test_valores_invalidos) ... ok
+test_valores_validos (tests.test_validacao.TestValor.test_valores_validos) ... ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 0.187s
+
+OK

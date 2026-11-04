@@ -1,0 +1,21 @@
+pedido_id,cliente,email,valor,data_pedido,status
+PED-101,Ana Souza,ana.souza@email.com,250.00,2026-10-01,APROVADO
+PED-102,Bruno Lima,bruno@email.com,89.9,2026-10-05,pendente
+  PED-103  ,  Carla Dias  ,carla@email.com,1200,2026-10-10,  Aprovado
+PED-104,Daniel Rocha,daniel@email.com,45.50,2026-10-12,CANCELADO
+PED-105,"Silva, Eduardo",eduardo@email.com,0.10,2026-10-15,APROVADO
+PED-106,Fernanda Alves,fernanda@email.com,0.20,2026-10-30,APROVADO
+PED-107,Gustavo Reis,gustavo@email.com,99.99,2026-10-20,APROVADO
+PED-107,Helena Costa,helena@email.com,15.00,2026-10-21,PENDENTE
+
+PED-108,Igor Mendes,igor@email.com,"12,50",2026-10-22,APROVADO
+PED-109,Julia Martins,julia@email.com,-30.00,2026-10-23,PENDENTE
+PED-110,Kaique Torres,kaique@email.com,75.00,2026-02-30,APROVADO
+PED-111,Larissa Nunes,larissa@email.com,60.00,2026-11-15,PENDENTE
+PED-112,,lucas email.com,abc,30/10/2026,ENVIADO
+PED-113,Marina Prado,marina@@email.com,10.555,2026-10-25,CANCELADO
+,Nicolas Ramos,nicolas@email.com,300.00,2026-10-26,APROVADO
+PED-114,Olivia Freitas,olivia@email.com,0,2026-10-27,APROVADO
+,,,,,
+PED-101,Paulo Queiroz,paulo@,500.00,2026-10-28,APROVADO
+ped-114,Rafael Souto,rafael@email.com,35.00,2026-10-29,pendente

@@ -1,0 +1,16 @@
+{
+  "data_referencia": "2026-10-30",
+  "total_registros": 3,
+  "registros_validos": 2,
+  "registros_invalidos": 1,
+  "total_aprovado": "150.50",
+  "invalidos": [
+    {
+      "linha": 4,
+      "pedido_id": "PED-003",
+      "erros": [
+        "email: formato inválido"
+      ]
+    }
+  ]
+}

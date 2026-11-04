@@ -101,3 +101,11 @@ Essas ações são suas, porque envolvem a sua conta e o envio para a empresa:
 ## Pergunta para conferir o entendimento
 
 Na entrevista, o avaliador pede: "mude a regra para aceitar até **três** casas decimais no valor". Quais arquivos você mudaria? E qual teste deveria começar a falhar antes de você ajustá-lo?
+
+**Resposta:**
+- **`app/validacao.py`:** trocar `{1,2}` por `{1,3}` no `PADRAO_VALOR` e ajustar a mensagem `"use 10, 10.5 ou 10.50"`. É uma mudança de **uma linha** na regra, graças à separação em módulos.
+- **`app/relatorio.py`, ponto de atenção:** o `total_aprovado` continua com 2 casas (`quantize(DUAS_CASAS)`), como pede o contrato do JSON. Com 3 casas na entrada, a soma pode precisar **arredondar** (`10.555` vira `10.56`, porque o `Decimal` usa por padrão o arredondamento "do banqueiro", `ROUND_HALF_EVEN`). Seria preciso combinar com a equipe qual regra de arredondamento usar.
+- **Testes que falhariam primeiro:**
+  - `test_valores_invalidos`, porque `"10.555"` está na lista de valores recusados;
+  - `test_relatorio_de_demonstracao_entregue_esta_atualizado`, porque o PED-113 da demonstração (`10.555`) perderia o erro de valor e o relatório mudaria.
+- **Ordem recomendada:** primeiro mudar o teste (passar `"10.555"` para os válidos e colocar `"10.5555"` nos inválidos), ver ele falhar, depois mudar o código, ver passar, e por fim gerar de novo o relatório da demonstração.

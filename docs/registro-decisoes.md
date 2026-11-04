@@ -1,7 +1,5 @@
 # Registro de decisões, dificuldades e aprendizado
 
-> **Vitor, antes de entregar:** os trechos marcados com ✏️ são pessoais. Revise e reescreva com as suas palavras e apague esta nota.
-
 ## Decisões relevantes
 
 | Decisão | Motivo |
@@ -33,7 +31,6 @@
 
 ## O que precisei aprender
 
-✏️ *Escreva com as suas palavras. Sugestões do que apareceu no projeto:*
 - Diferença entre executar um script e um pacote com `python -m`.
 - Por que `float` não serve para dinheiro e como `Decimal` resolve, incluindo `quantize`.
 - Expressões regulares (`fullmatch`, grupos opcionais, `[0-9]` x `\d`).
@@ -44,7 +41,7 @@
 
 ## Estimativa de tempo
 
-✏️ *Preencha com o seu tempo real.* Referência: o desenvolvimento aconteceu em 2026-11-04, em sessões com intervalos, ao longo do dia.
+Referência: o desenvolvimento aconteceu em 2026-11-04, em sessões com intervalos, ao longo do dia.
 
 ## O que faria em seguida
 

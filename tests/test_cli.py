@@ -54,7 +54,7 @@ class TestExecucaoCompleta(BaseCli):
         ambiente = dict(os.environ, PYTHONIOENCODING="utf-8")
         resultado = subprocess.run(
             [sys.executable, "-m", "app", "--entrada", str(self.entrada),
-             "--saida", str(self.saida), "--data-referencia", "2026-10-30"],
+            "--saida", str(self.saida), "--data-referencia", "2026-10-30"],
             cwd=RAIZ_DO_PROJETO, capture_output=True, text=True, encoding="utf-8", env=ambiente,
         )
         self.assertEqual(resultado.returncode, 0, resultado.stderr)
@@ -72,7 +72,7 @@ class TestExecucaoCompleta(BaseCli):
     def test_t06_somente_cabecalho(self):
         self.entrada.write_text("pedido_id,cliente,email,valor,data_pedido,status\n", encoding="utf-8")
         codigo, _, _ = self.executar("--entrada", str(self.entrada), "--saida", str(self.saida),
-                                     "--data-referencia", "2026-10-30")
+                                    "--data-referencia", "2026-10-30")
         self.assertEqual(codigo, 0)
         self.assertEqual(json.loads(self.saida.read_text(encoding="utf-8")), {
             "data_referencia": "2026-10-30",
@@ -93,7 +93,7 @@ class TestExecucaoCompleta(BaseCli):
             encoding="utf-8",
         )
         codigo, _, _ = self.executar("--entrada", str(self.entrada), "--saida", str(self.saida),
-                                     "--data-referencia", "2026-10-30")
+                                    "--data-referencia", "2026-10-30")
         relatorio = json.loads(self.saida.read_text(encoding="utf-8"))
         self.assertEqual(codigo, 0)
         self.assertEqual(relatorio["total_aprovado"], "10.00")
@@ -104,10 +104,10 @@ class TestExecucaoCompleta(BaseCli):
         # Gera de novo o relatório da demonstração e compara com o que foi entregue em saida/.
         entregue = RAIZ_DO_PROJETO / "saida" / "relatorio_demonstracao.json"
         codigo, _, _ = self.executar("--entrada", str(RAIZ_DO_PROJETO / "dados" / "pedidos_demonstracao.csv"),
-                                     "--saida", str(self.saida), "--data-referencia", "2026-10-30")
+                                    "--saida", str(self.saida), "--data-referencia", "2026-10-30")
         self.assertEqual(codigo, 0)
         self.assertEqual(json.loads(self.saida.read_text(encoding="utf-8")),
-                         json.loads(entregue.read_text(encoding="utf-8")))
+                        json.loads(entregue.read_text(encoding="utf-8")))
 
     def test_entrada_nao_e_modificada(self):
         self.entrada.write_text(EXEMPLO, encoding="utf-8")
@@ -186,7 +186,7 @@ class TestArgumentos(BaseCli):
             with self.subTest(data=data_texto):
                 with self.assertRaises(SystemExit) as contexto:
                     self.executar("--entrada", str(self.entrada), "--saida", str(self.saida),
-                                  "--data-referencia", data_texto)
+                                "--data-referencia", data_texto)
                 self.assertNotEqual(contexto.exception.code, 0)
 
 
